@@ -1,4 +1,4 @@
-package main
+package echo
 
 import (
 	"fmt"
@@ -6,14 +6,8 @@ import (
 	"strconv"
 )
 
-/**
-* Exercises:
-* x) include the name of the command that invoked Args
-* x) print the index of each argument
-* 3) measure differences in running time between versions
-**/
-
-func main() {
+// Echo2 ...
+func Echo2() {
 	s, sep := "", ""
 	for index, arg := range os.Args[0:] {
 		i := strconv.Itoa(index)

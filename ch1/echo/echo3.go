@@ -1,4 +1,4 @@
-package main
+package echo
 
 import (
 	"fmt"
@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
-func main() {
+// Echo3 ...
+func Echo3() {
 	fmt.Println(strings.Join(os.Args[1:], " "))
 }
