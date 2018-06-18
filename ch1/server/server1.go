@@ -1,4 +1,4 @@
-package server
+package main
 
 import (
 	"log"
@@ -7,8 +7,7 @@ import (
 	"github.com/michaelanthonymain/go-programming-language/ch1/lissajous"
 )
 
-// Server1 ...
-func Server1() {
+func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		lissajous.Lissajous(w)
 	})
